@@ -556,7 +556,8 @@ main {
 
 .footer-sitemap {
   padding: 2.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #f1f5f9;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .sitemap-grid {
@@ -571,13 +572,13 @@ main {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.9);
+  color: #1e293b;
   margin-bottom: 0.85rem;
 }
 
 .sitemap-desc {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: #64748b;
   line-height: 1.7;
 }
 
@@ -590,17 +591,17 @@ main {
 
 .sitemap-links li {
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: #64748b;
 }
 
 .sitemap-links a {
-  color: rgba(255, 255, 255, 0.55);
+  color: #475569;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .sitemap-links a:hover {
-  color: #93c5fd;
+  color: #2563eb;
 }
 
 .footer-bar {
