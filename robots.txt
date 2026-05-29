@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://robertopalozzo.github.io/esp32c3-case-design/sitemap.xml
