@@ -1,0 +1,87 @@
+/* ================================
+   ESP32C3 Case Design
+   Autore: Il tuo nome
+   Data: 2025
+   ================================ */
+
+/* ── RESET ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── BODY ── */
+body {
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  padding-top: 64px;  /* evita che il contenuto vada sotto la navbar */
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  background-color: #1a1a2e;
+  width: 100%;
+  position: fixed;    /* rimane fissa durante lo scroll */
+  top: 0;
+  left: 0;
+  z-index: 1000;      /* rimane sopra a tutto */
+}
+
+.navbar .container {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar img {
+  height: 60px;
+  width: auto;
+}
+
+/* ── MENU ── */
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ── MENU ── */
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+/* ── MAIN ── */
+main {
+  background-color: #bbb8b8;
+  min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ── SITE WRAPPER ── */
+.site-wrapper {
+  padding: 2rem 0;
+}
+
+/* ── CONTAINER ── */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}

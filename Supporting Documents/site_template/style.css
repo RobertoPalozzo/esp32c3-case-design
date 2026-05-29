@@ -1,0 +1,103 @@
+/* CSS - This file contains all of the style and layouts for the site */
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+
+    --bg-color: rgb(231, 231, 231);
+    --page-color: white;
+    --panel-color: rgb(20, 20, 20);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+
+    background-color: var(--bg-color);
+}
+
+#page {
+    flex: 1;
+
+    border: 0;
+    border-radius: 5px;
+
+    box-shadow: rgb(187, 187, 187) 2px 2px 0;
+
+    background-color: var(--page-color);
+
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    background-color: var(--panel-color);
+    padding: 0.5rem;
+}
+
+nav #logo {
+    flex: 1;
+}
+
+nav img {
+    border: 0;
+    border-radius: 10px;
+
+    max-width: 100px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1rem;
+
+    list-style: none;
+    margin-right: 0.5rem;
+}
+
+nav ul li a {
+    display: block;
+
+    color: black;
+    background-color: white;
+
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    text-decoration: none;
+    font-size: 0.85rem;
+
+    transition: all 0.25s;
+}
+nav ul li a:hover {
+    color: white;
+    background-color: dodgerblue;
+}
+
+footer {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-color: var(--panel-color);
+
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
