@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <!-- Head: technical information, not visible in the browser -->    <meta charset="UTF-8" />
+        <!-- Head: technical information, not visible in the browser -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ESP32C3 Case Design</title>
+        <title>Final Design — ESP32C3 Case Design</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <!-- Body: main visible area of the browser -->
     <body>
+
         <!-- Navbar: full width bar with logo and menu -->
         <nav class="navbar">
 
             <!-- Container: content centered at 1280px -->
             <div class="container">
-                <!-- Logo -->
-                <img src="images/placeholder.png" alt="ESP32C3 Logo" />
 
-                <!-- Menu -->
+                <!-- Brand name -->
+                <a href="index.html" class="nav-brand">ESP32C3 Case Design</a>
+
+                <!-- Navigation menu -->
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="prototype1.html">Prototype 1</a></li>
@@ -25,13 +29,203 @@
                     <li><a href="final.html" class="active">Final Design</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <!-- Main: central window, max 1280px, centered on the screen -->
-        <main>
-            <div class="site-wrapper">
 
             </div>
+        </nav>
+
+        <!-- Main: central window, max 1280px, centered on the screen -->
+        <main>
+
+            <div class="site-wrapper">
+
+                <!-- Hero section -->
+                <section class="hero">
+                    <div class="container">
+
+                        <!-- Page title -->
+                        <h1>Design Finale</h1>
+
+                        <!-- Short description -->
+                        <p>Versione definitiva della custodia protettiva per ESP32C3 Zero: tutte le correzioni applicate, pulsanti integrati e ventilazione ottimizzata.</p>
+
+                    </div>
+                </section>
+
+                <!-- Description section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Descrizione</h2>
+
+                        <p>Il design finale incorpora tutte le correzioni e i miglioramenti identificati durante le due fasi di prototipazione. La custodia garantisce un inserimento agevole della scheda, accesso completo alla porta USB-C e ai pin GPIO, ventilazione adeguata e la possibilità di azionare i pulsanti BOOT e RST senza aprire la custodia.</p>
+
+                        <p>Il modello definitivo è stato progettato in Tinkercad, stampato in PLA con la stampante BambuLab A1 e testato con la scheda ESP32C3 Zero.</p>
+
+                    </div>
+                </section>
+
+                <!-- Features section -->
+                <section class="proto-section proto-features">
+                    <div class="container">
+
+                        <h2>Caratteristiche principali</h2>
+
+                        <ul class="features-list">
+                            <li>
+                                <span class="feature-title">Alloggiamento preciso</span>
+                                <span class="feature-desc">Tolleranze ottimizzate per un inserimento agevole della scheda senza gioco eccessivo.</span>
+                            </li>
+                            <li>
+                                <span class="feature-title">Accesso USB-C</span>
+                                <span class="feature-desc">Apertura frontale allineata alla porta USB-C della scheda per la programmazione e l'alimentazione.</span>
+                            </li>
+                            <li>
+                                <span class="feature-title">Slot per pin GPIO</span>
+                                <span class="feature-desc">Due slot laterali estesi permettono l'accesso completo ai pin GPIO senza rimuovere la custodia.</span>
+                            </li>
+                            <li>
+                                <span class="feature-title">Pulsanti integrati</span>
+                                <span class="feature-desc">Due pulsanti flessibili nel coperchio permettono di azionare BOOT e RST senza aprire la custodia.</span>
+                            </li>
+                            <li>
+                                <span class="feature-title">Ventilazione</span>
+                                <span class="feature-desc">Aperture su entrambi i lati e sul coperchio garantiscono una superficie di ventilazione adeguata.</span>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!-- Photos section -->
+                <section class="proto-photos">
+                    <div class="container">
+
+                        <h2>Foto</h2>
+
+                        <div class="photo-grid">
+
+                            <figure class="photo-item">
+                                <div class="photo-placeholder">Foto 1</div>
+                                <figcaption>Vista frontale</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <div class="photo-placeholder">Foto 2</div>
+                                <figcaption>Vista laterale</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <div class="photo-placeholder">Foto 3</div>
+                                <figcaption>Coperchio con pulsanti</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <div class="photo-placeholder">Foto 4</div>
+                                <figcaption>Scheda inserita</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Comparison table section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Confronto tra i design</h2>
+
+                        <div class="table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Criterio</th>
+                                        <th>Prototipo 1</th>
+                                        <th>Prototipo 2</th>
+                                        <th>Design Finale</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Fit e dimensioni</td>
+                                        <td>Troppo corto; la scheda faticava ad entrare</td>
+                                        <td>+1 mm di lunghezza; inserimento agevole</td>
+                                        <td>Tolleranze ottimizzate; fit preciso</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ventilazione</td>
+                                        <td>Solo coperchio; superficie insufficiente</td>
+                                        <td>Aperture su lati e coperchio; superficie adeguata</td>
+                                        <td>Ventilazione ottimizzata; flusso d'aria uniforme</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Facilità di stampa</td>
+                                        <td>Stampa interrotta prima del completamento</td>
+                                        <td>Stampa completata con successo</td>
+                                        <td>Impostazioni ottimizzate; nessun problema</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accesso USB-C</td>
+                                        <td>Apertura presente ma disallineata</td>
+                                        <td>Apertura corretta e allineata</td>
+                                        <td>Accesso completo senza ostruzioni</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accesso pin GPIO</td>
+                                        <td>Slot presenti ma troppo corti</td>
+                                        <td>Slot estesi; accesso completo</td>
+                                        <td>Accesso completo a tutti i pin</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Accesso pulsanti</td>
+                                        <td>Fori presenti; accesso diretto</td>
+                                        <td>Pulsanti flessibili integrati nel coperchio</td>
+                                        <td>Pulsanti flessibili; nessuna necessità di aprire la custodia</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Qualità di stampa</td>
+                                        <td>Stampa incompleta; altezza non raggiunta</td>
+                                        <td>Buona qualità; clip fragile</td>
+                                        <td>Ottima qualità; struttura robusta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Conclusions section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Conclusioni</h2>
+
+                        <p>Il percorso di prototipazione ha portato a una custodia funzionale che soddisfa tutti i requisiti iniziali del progetto. Ogni iterazione ha permesso di identificare e risolvere problemi specifici, portando a un design finale stabile, funzionale e adatto all'utilizzo in classe.</p>
+
+                    </div>
+                </section>
+
+                <!-- Navigation between pages -->
+                <div class="proto-nav">
+                    <div class="container">
+                        <a href="prototype2.html" class="proto-nav-prev">&larr; Prototipo 2</a>
+                        <span class="proto-nav-next"></span>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="footer-left">Kangan Institute - Broadmeadows VIC</span>
+                <span class="footer-right">Certificate III in IT</span>
+            </div>
+        </footer>
+
     </body>
+
 </html>

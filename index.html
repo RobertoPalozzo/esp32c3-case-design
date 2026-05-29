@@ -1,53 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HEAD - This is the head of the site, metadata goes here such as CSS linking and site title -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Thinking - AT4</title>
+    <head>
+        <!-- Head: technical information, not visible in the browser -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ESP32C3 Case Design</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <!-- Body: main visible area of the browser -->
+    <body>
 
-<!-- BODY - This is the body of the site, the viewable content goes here -->
-<body>
-    <!-- NAVIGATION -->
-    <nav>
-        <!-- Your site logo should go here, it should also be clickable and send you to the home page -->
-        <div id="logo">
-            <img src="./placeholder.png">
-        </div>
+        <!-- Navbar: full width bar with logo and menu -->
+        <nav class="navbar">
 
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+            <!-- Container: content centered at 1280px -->
+            <div class="container">
 
-            <li>
-                <a href="#">Page 2</a>
-            </li>
+                <!-- Brand name -->
+                <a href="index.html" class="nav-brand">ESP32C3 Case Design</a>
 
-            <li>
-                <a href="#">Page 3</a>
-            </li>
-        </ul>
-    </nav>
+                <!-- Navigation menu -->
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="prototype1.html">Prototype 1</a></li>
+                    <li><a href="prototype2.html">Prototype 2</a></li>
+                    <li><a href="final.html">Final Design</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
 
-    <!-- MAIN - The page content goes here, it may be different for each page -->
+            </div>
+        </nav>
 
-    <main>
-        <div id="page">
-            <!-- YOUR PAGE CONTENT GOES HERE -->
-        </div>
-    </main>
-    
-    <!-- FOOTER - This is the footer of the site (what is at the bottom of the page) -->
-    <footer>
-        <p>
-            Footer - Design Thinking - AT4
-        </p>
-    </footer>
+        <!-- Main: central window, max 1280px, centered on the screen -->
+        <main>
 
-</body>
+            <div class="site-wrapper">
+
+                <!-- Hero section: main title and project introduction -->
+                <section class="hero">
+                    <div class="container">
+
+                        <!-- Main title -->
+                        <h1>Progetto Custodia ESP32C3 Zero</h1>
+
+                        <!-- Short project introduction -->
+                        <p>Documentazione del percorso di design e prototipazione di una custodia stampata in 3D per il microcontrollore ESP32C3 Zero.</p>
+
+                    </div>
+                </section>
+
+                <!-- Product image section -->
+                <section class="product-image">
+                    <div class="container">
+                        <figure class="board-figure">
+                            <img src="images/ESP32 C3 Zero.jpg" alt="ESP32C3 Zero microcontroller board" />
+                            <figcaption>Immagine: <a href="https://www.waveshare.com/esp32-c3-zero.htm" target="_blank">Waveshare ESP32-C3-Zero</a> — © Waveshare, utilizzata a scopo educativo.</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- Purpose section: why this website exists -->
+                <section class="purpose">
+                    <div class="container">
+
+                        <!-- Section title -->
+                        <h2>Scopo del sito</h2>
+
+                        <!-- Purpose description -->
+                        <p>Questo sito documenta il processo completo di progettazione e sviluppo di una custodia protettiva stampata in 3D per il microcontrollore ESP32C3 Zero. La custodia è stata progettata per proteggere il circuito durante il normale utilizzo in classe, permettendo al tempo stesso l'accesso alla porta USB, ai pin GPIO e ai pulsanti BOOT e RST.</p>
+
+                        <!-- Project journey description -->
+                        <p>Attraverso due fasi di prototipazione vengono mostrati i miglioramenti apportati ad ogni versione fino al design finale, documentando problemi riscontrati, soluzioni adottate e risultati dei test.</p>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="footer-left">Kangan Institute - Broadmeadows VIC</span>
+                <span class="footer-right">Certificate III in IT</span>
+            </div>
+        </footer>
+
+    </body>
+
 </html>

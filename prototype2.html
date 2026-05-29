@@ -1,36 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <!-- Head: technical information, not visible in the browser -->    <meta charset="UTF-8" />
+        <!-- Head: technical information, not visible in the browser -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ESP32C3 Case Design</title>
+        <title>Prototype 2 — ESP32C3 Case Design</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <!-- Body: main visible area of the browser -->
     <body>
+
         <!-- Navbar: full width bar with logo and menu -->
         <nav class="navbar">
 
             <!-- Container: content centered at 1280px -->
             <div class="container">
-                <!-- Logo -->
-                <img src="images/placeholder.png" alt="ESP32C3 Logo" />
 
-                <!-- Menu -->
+                <!-- Brand name -->
+                <a href="index.html" class="nav-brand">ESP32C3 Case Design</a>
+
+                <!-- Navigation menu -->
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="prototype1.html">Prototype 1</a></li>
-                    <li><a href="prototype2.html">Prototype 2</a></li>
+                    <li><a href="prototype2.html" class="active">Prototype 2</a></li>
                     <li><a href="final.html">Final Design</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+
             </div>
         </nav>
+
         <!-- Main: central window, max 1280px, centered on the screen -->
         <main>
+
             <div class="site-wrapper">
 
+                <!-- Hero section -->
+                <section class="hero">
+                    <div class="container">
+
+                        <!-- Page title -->
+                        <h1>Prototipo 2</h1>
+
+                        <!-- Short description -->
+                        <p>Seconda iterazione della custodia: correzioni alle tolleranze, miglioramento del sistema di chiusura e nuove verifiche di stampa con BambuLab A1.</p>
+
+                    </div>
+                </section>
+
+                <!-- Description section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Descrizione</h2>
+
+                        <p>Il secondo prototipo incorpora tutte le correzioni identificate dopo il primo test. La scatola è stata allungata di 1 mm per facilitare l'inserimento della scheda e i due slot sul fondo sono stati estesi per evitare che i pin tocchino la base. La ventilazione è stata migliorata con aperture su entrambi i lati della scatola e sul coperchio, raggiungendo la superficie minima richiesta.</p>
+
+                        <p>Un'importante novità di questo prototipo è l'integrazione di due pulsanti flessibili nel coperchio, che permettono di azionare i tasti BOOT e RST della scheda senza dover aprire la custodia. Il modello è stato progettato in Tinkercad, esportato in STL e stampato in PLA con la stampante BambuLab A1.</p>
+
+                    </div>
+                </section>
+
+                <!-- Pros section -->
+                <section class="proto-section proto-pros">
+                    <div class="container">
+
+                        <h2>Vantaggi (Pros)</h2>
+
+                        <ul class="pros-list">
+                            <li>La scheda si inserisce agevolmente grazie all'allungamento di 1 mm.</li>
+                            <li>I pulsanti BOOT e RST sono azionabili dal coperchio senza aprire la custodia.</li>
+                            <li>Ventilazione migliorata su entrambi i lati e sul coperchio.</li>
+                            <li>Slot per i pin estesi garantiscono accesso completo a tutti i GPIO.</li>
+                            <li>Apertura USB-C correttamente allineata con la porta della scheda.</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!-- Design images section -->
+                <section class="proto-photos">
+                    <div class="container">
+
+                        <h2>Design 3D</h2>
+
+                        <div class="photo-grid">
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_1.png" alt="Design Prototipo 2 - 1" />
+                                <figcaption>Design 1</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_2.png" alt="Design Prototipo 2 - 2" />
+                                <figcaption>Design 2</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_3.png" alt="Design Prototipo 2 - 3" />
+                                <figcaption>Design 3</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_4.png" alt="Design Prototipo 2 - 4" />
+                                <figcaption>Design 4</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_5.png" alt="Design Prototipo 2 - 5" />
+                                <figcaption>Design 5</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_6.png" alt="Design Prototipo 2 - 6" />
+                                <figcaption>Design 6</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Design_2_7.png" alt="Design Prototipo 2 - 7" />
+                                <figcaption>Design 7</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Issues section -->
+                <section class="proto-section proto-issues">
+                    <div class="container">
+
+                        <h2>Problemi riscontrati</h2>
+
+                        <ul class="issues-list">
+                            <li>I clip di chiusura risultavano troppo rigidi e uno si è rotto durante il test di assemblaggio.</li>
+                            <li>Il foro per il pulsante BOOT necessitava di un diametro leggermente maggiore.</li>
+                            <li>Lo spessore delle pareti era eccessivo in alcuni punti, aumentando inutilmente il peso.</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!-- Conclusions section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Conclusioni</h2>
+
+                        <p>Il secondo prototipo ha confermato il corretto funzionamento delle tolleranze e dell'apertura USB-C. I problemi residui riguardano la robustezza dei clip e alcune finiture. Questi aspetti verranno risolti nel design finale, dove si interverrà anche sull'ottimizzazione dello spessore delle pareti.</p>
+
+                    </div>
+                </section>
+
+                <!-- Navigation between pages -->
+                <div class="proto-nav">
+                    <div class="container">
+                        <a href="prototype1.html" class="proto-nav-prev">&larr; Prototipo 1</a>
+                        <a href="final.html" class="proto-nav-next">Final Design &rarr;</a>
+                    </div>
+                </div>
+
             </div>
+
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="footer-left">Kangan Institute - Broadmeadows VIC</span>
+                <span class="footer-right">Certificate III in IT</span>
+            </div>
+        </footer>
+
     </body>
+
 </html>

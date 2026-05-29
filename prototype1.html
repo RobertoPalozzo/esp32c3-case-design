@@ -1,36 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <!-- Head: technical information, not visible in the browser -->    <meta charset="UTF-8" />
+        <!-- Head: technical information, not visible in the browser -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ESP32C3 Case Design</title>
+        <title>Prototype 1 — ESP32C3 Case Design</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <!-- Body: main visible area of the browser -->
     <body>
+
         <!-- Navbar: full width bar with logo and menu -->
         <nav class="navbar">
 
             <!-- Container: content centered at 1280px -->
             <div class="container">
-                <!-- Logo -->
-                <img src="images/placeholder.png" alt="ESP32C3 Logo" />
 
-                <!-- Menu -->
+                <!-- Brand name -->
+                <a href="index.html" class="nav-brand">ESP32C3 Case Design</a>
+
+                <!-- Navigation menu -->
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="prototype1.html" class="active">Prototype 1</a></li>
                     <li><a href="prototype2.html">Prototype 2</a></li>
                     <li><a href="final.html">Final Design</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <!-- Main: central window, max 1280px, centered on the screen -->
-        <main>
-            <div class="site-wrapper">
 
             </div>
+        </nav>
+
+        <!-- Main: central window, max 1280px, centered on the screen -->
+        <main>
+
+            <div class="site-wrapper">
+
+                <!-- Hero section -->
+                <section class="hero">
+                    <div class="container">
+
+                        <!-- Page title -->
+                        <h1>Prototipo 1</h1>
+
+                        <!-- Short description -->
+                        <p>Prima iterazione della custodia stampata in 3D per ESP32C3 Zero: obiettivi di progetto, scelte di design e risultati del primo test.</p>
+
+                    </div>
+                </section>
+
+                <!-- Description section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Descrizione</h2>
+
+                        <p>Il primo prototipo ha come obiettivo principale la verifica delle dimensioni e dell'ingombro della custodia attorno alla scheda ESP32C3 Zero. Il modello è stato progettato in Tinkercad e stampato in PLA con una stampante BambuLab A1.</p>
+
+                        <p>La custodia è composta da due parti: una base che accoglie la scheda e un coperchio. Sono stati previsti un'apertura per la porta USB-C, due slot laterali per i pin GPIO e due fori per i pulsanti BOOT e RST.</p>
+
+                    </div>
+                </section>
+
+                <!-- Pros section -->
+                <section class="proto-section proto-pros">
+                    <div class="container">
+
+                        <h2>Vantaggi (Pros)</h2>
+
+                        <ul class="pros-list">
+                            <li>Prima versione stampata con successo: struttura di base funzionante.</li>
+                            <li>Apertura USB-C inclusa fin dalla prima versione.</li>
+                            <li>Slot per i pin GPIO presenti su entrambi i lati.</li>
+                            <li>Design compatto adatto all'utilizzo in classe.</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!-- Photos section -->
+                <section class="proto-photos">
+                    <div class="container">
+
+                        <h2>Foto</h2>
+
+                        <div class="photo-grid">
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_1.JPG" alt="Prototipo 1 - Foto 1" />
+                                <figcaption>Foto 1</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_2.JPG" alt="Prototipo 1 - Foto 2" />
+                                <figcaption>Foto 2</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_3.JPG" alt="Prototipo 1 - Foto 3" />
+                                <figcaption>Foto 3</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_4.JPG" alt="Prototipo 1 - Foto 4" />
+                                <figcaption>Foto 4</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_5.JPG" alt="Prototipo 1 - Foto 5" />
+                                <figcaption>Foto 5</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_6.JPG" alt="Prototipo 1 - Foto 6" />
+                                <figcaption>Foto 6</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_7.JPG" alt="Prototipo 1 - Foto 7" />
+                                <figcaption>Foto 7</figcaption>
+                            </figure>
+
+                            <figure class="photo-item">
+                                <img src="images/Prot_1_8.JPG" alt="Prototipo 1 - Foto 8" />
+                                <figcaption>Foto 8</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Issues section -->
+                <section class="proto-section proto-issues">
+                    <div class="container">
+
+                        <h2>Problemi riscontrati</h2>
+
+                        <ul class="issues-list">
+                            <li>La custodia era troppo corta, rendendo difficile l'inserimento della scheda nel suo alloggiamento.</li>
+                            <li>I pin della scheda toccavano il fondo della scatola perché lo slot per i pin era troppo corto.</li>
+                            <li>La ventilazione aggiunta al coperchio non raggiungeva la superficie minima richiesta.</li>
+                            <li>La stampa si è interrotta a un certo punto, impedendo alla scatola di raggiungere l'altezza prevista nel design.</li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!-- Next steps section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Conclusioni</h2>
+
+                        <p>Il primo prototipo ha permesso di identificare i principali problemi strutturali della custodia. Nel secondo prototipo la scatola verrà allungata di 1 mm per facilitare l'inserimento della scheda, gli slot sul fondo verranno estesi, la ventilazione verrà migliorata con aperture su entrambi i lati e sul coperchio, e verranno integrati due pulsanti flessibili nel coperchio per azionare i tasti della scheda senza aprire la custodia.</p>
+
+                    </div>
+                </section>
+
+                <!-- Navigation between prototypes -->
+                <div class="proto-nav">
+                    <div class="container">
+                        <span class="proto-nav-prev"></span>
+                        <a href="prototype2.html" class="proto-nav-next">Prototipo 2 &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="footer-left">Kangan Institute - Broadmeadows VIC</span>
+                <span class="footer-right">Certificate III in IT</span>
+            </div>
+        </footer>
+
     </body>
+
 </html>

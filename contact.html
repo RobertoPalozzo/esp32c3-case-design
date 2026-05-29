@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-        <!-- Head: technical information, not visible in the browser -->    <meta charset="UTF-8" />
+        <!-- Head: technical information, not visible in the browser -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ESP32C3 Case Design</title>
+        <title>Contact — ESP32C3 Case Design</title>
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <!-- Body: main visible area of the browser -->
     <body>
+
         <!-- Navbar: full width bar with logo and menu -->
         <nav class="navbar">
 
             <!-- Container: content centered at 1280px -->
             <div class="container">
-                <!-- Logo -->
-                <span class="nav-brand">ESP32C3 Case Design</span> 
-                <!--<img src="images/placeholder.png" alt="ESP32C3 Logo" />-->
 
-                <!-- Menu -->
+                <!-- Brand name -->
+                <a href="index.html" class="nav-brand">ESP32C3 Case Design</a>
+
+                <!-- Navigation menu -->
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="prototype1.html">Prototype 1</a></li>
@@ -26,13 +29,146 @@
                     <li><a href="final.html">Final Design</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-            </div>
-        </nav>
-        <!-- Main: central window, max 1280px, centered on the screen -->
-        <main>
-            <div class="site-wrapper">
 
             </div>
+        </nav>
+
+        <!-- Main: central window, max 1280px, centered on the screen -->
+        <main>
+
+            <div class="site-wrapper">
+
+                <!-- Hero section -->
+                <section class="hero">
+                    <div class="container">
+
+                        <!-- Page title -->
+                        <h1>Contact</h1>
+
+                        <!-- Short description -->
+                        <p>Informazioni sull'autore del progetto e sulla scuola.</p>
+
+                    </div>
+                </section>
+
+                <!-- Contact section -->
+                <section class="contact-section">
+                    <div class="container">
+
+                        <div class="contact-grid">
+
+                            <!-- Author card -->
+                            <div class="contact-card">
+                                <div class="contact-card-icon">&#128100;</div>
+                                <h3>Autore</h3>
+                                <p>Roberto Palozzo</p>
+                            </div>
+
+                            <!-- School card -->
+                            <div class="contact-card">
+                                <div class="contact-card-icon">&#127979;</div>
+                                <h3>Istituto</h3>
+                                <p>Kangan Institute<br/>Broadmeadows VIC</p>
+                            </div>
+
+                            <!-- Course card -->
+                            <div class="contact-card">
+                                <div class="contact-card-icon">&#127891;</div>
+                                <h3>Corso</h3>
+                                <p>Certificate III in IT</p>
+                            </div>
+
+                            <!-- Year card -->
+                            <div class="contact-card">
+                                <div class="contact-card-icon">&#128197;</div>
+                                <h3>Anno</h3>
+                                <p>2026</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Project info section -->
+                <section class="proto-section">
+                    <div class="container">
+
+                        <h2>Il progetto</h2>
+
+                        <p>Questo sito è stato realizzato come parte dell'Assessment 3 del corso Certificate III in IT presso il Kangan Institute. Documenta il percorso completo di progettazione e prototipazione di una custodia stampata in 3D per il microcontrollore ESP32C3 Zero, dalla prima bozza al design finale.</p>
+
+                    </div>
+                </section>
+
+                <!-- Feedback form section -->
+                <section class="form-section">
+                    <div class="container">
+
+                        <h2>Feedback &amp; Enquiries</h2>
+                        <p class="form-intro">Use this form to send feedback about the website or ask questions about the project.</p>
+
+                        <form class="feedback-form" action="#" method="post">
+
+                            <!-- Name -->
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required />
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+                            </div>
+
+                            <!-- Reason for enquiry -->
+                            <div class="form-group">
+                                <label for="message">Reason for enquiry / Feedback <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Write your feedback or question here..." required></textarea>
+                            </div>
+
+                            <!-- Prototype preference -->
+                            <div class="form-group">
+                                <label>Which prototype did you find most interesting? <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="prototype" value="prototype1" required />
+                                        Prototype 1
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="prototype" value="prototype2" />
+                                        Prototype 2
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="prototype" value="final" />
+                                        Final Design
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="form-group">
+                                <button type="submit" class="form-submit">Send Feedback</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </section>
+
+            </div>
+
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <span class="footer-left">Kangan Institute - Broadmeadows VIC</span>
+                <span class="footer-right">Certificate III in IT</span>
+            </div>
+        </footer>
+
     </body>
+
 </html>
