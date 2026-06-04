@@ -4,7 +4,7 @@ A documentation website for the design and 3D printing journey of a protective c
 
 ## Project Overview
 
-This project was completed as part of **Assessment Task 3 & 4** for the **Certificate III in Information Technology** at **Kangan Institute – Broadmeadows VIC**.
+This project was completed as part of **Assessment Task 3** for the **Certificate III in Information Technology** at **Kangan Institute – Broadmeadows VIC**.
 
 The website documents the full design process, from the first prototype to the final product, including problems encountered, improvements made, and test results.
 
@@ -51,6 +51,10 @@ esp32c3-case-design/
 
 ## Author
 
-**Roberto Palozzo**  
+**Roberto Palozzo**
+
+## Student ID
+
+**200096469**
 Certificate III in Information Technology  
 Kangan Institute – Broadmeadows VIC – 2026
