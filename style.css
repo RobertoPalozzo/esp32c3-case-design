@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  }
 
 /* ── BODY ── */
 body {
@@ -19,6 +19,8 @@ body {
   background-color: #eef2f7;
   padding-top: 64px;
   font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── NAVBAR ── */
@@ -81,7 +83,7 @@ body {
 /* ── MAIN ── */
 main {
   background-color: #ffffff;
-  min-height: calc(100vh - 64px);
+  flex: 1 0 auto;
   max-width: 1280px;
   margin: 0 auto;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
