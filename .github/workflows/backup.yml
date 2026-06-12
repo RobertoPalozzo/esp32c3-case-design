@@ -11,16 +11,12 @@ jobs:
       - name: Scarica il codice dal repository
         uses: actions/checkout@v4
 
-      - name: Genera timestamp per il nome del file
-        id: timestamp
-        run: echo "date=$(date +'%Y-%m-%d-%H%M%S')" >> $GITHUB_OUTPUT
-
       - name: Comprimi il sito in un archivio zip
-        run: zip -r esp32-site-backup-${{ steps.timestamp.outputs.date }}.zip . -x "*.git*"
+        run: zip -r backup.zip . -x "*.git*"
 
       - name: Carica il file zip su Google Drive
         uses: willo32/google-drive-upload-action@v1
         with:
-          target: 'esp32-site-backup-${{ steps.timestamp.outputs.date }}.zip'
+          target: 'backup.zip'
           credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
           parent_folder_id: ${{ secrets.GDRIVE_FOLDER_ID }}
