@@ -14,9 +14,39 @@ jobs:
       - name: Comprimi il sito in un archivio zip
         run: zip -r backup.zip . -x "*.git*"
 
-      - name: Carica il file zip su Google Drive
-        uses: willo32/google-drive-upload-action@v1
-        with:
-          target: 'backup.zip'
-          credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
-          parent_folder_id: ${{ secrets.GDRIVE_FOLDER_ID }}
+      - name: Installa librerie Google
+        run: pip install google-api-python-client google-auth
+
+      - name: Carica su Google Drive tramite Python
+        shell: python
+        env:
+          GDRIVE_CREDENTIALS_B64: ${{ secrets.GDRIVE_CREDENTIALS }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+        run: |
+          import os
+          import base64
+          import json
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload
+
+          # 1. Decodifica le credenziali
+          creds_raw = base64.b64decode(os.environ['GDRIVE_CREDENTIALS_B64']).decode('utf-8')
+          creds_json = json.loads(creds_raw)
+          
+          # 2. Autenticazione
+          SCOPES = ['https://googleapis.com', 'https://googleapis.com']
+          creds = service_account.Credentials.from_service_account_info(creds_json, scopes=SCOPES)
+          service = build('drive', 'v3', credentials=creds)
+
+          # 3. Configura il file
+          file_metadata = {
+              'name': 'backup.zip',
+              'parents': [os.environ['GDRIVE_FOLDER_ID']]
+          }
+          media = MediaFileUpload('backup.zip', mimetype='application/zip')
+          
+          # 4. Carica il file
+          print("Inizio caricamento su Google Drive...")
+          file = service.files().create(body=file_metadata, media_body=media, fields='id').execute()
+          print(f"Backup completato con successo! File ID: {file.get('id')}")
