@@ -19,7 +19,7 @@ jobs:
         run: zip -r esp32-site-backup-${{ steps.timestamp.outputs.date }}.zip . -x "*.git*"
 
       - name: Carica il file zip su Google Drive
-        uses: adityak74/google-drive-upload-git-action@main
+        uses: adityak74/google-drive-upload@v2.0.1
         with:
           credentials: ${{ secrets.GDRIVE_CREDENTIALS }}
           filename: 'esp32-site-backup-${{ steps.timestamp.outputs.date }}.zip'
