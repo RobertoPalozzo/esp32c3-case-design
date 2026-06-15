@@ -49,7 +49,7 @@ esp32c3-case-design/
     └── Design_2_1.png ... Design_2_7.png
 ```
 
-## Author  **Roberto Palozzo**
+## Author
 
 **Roberto Palozzo**
 
