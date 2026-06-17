@@ -43,8 +43,9 @@ esp32c3-case-design/
 ├── style.css
 ├── robots.txt
 ├── sitemap.xml
+│
 ├── css/
-├   └── style.css
+│   └── style.css
 │
 └── images/
     ├── ESP32 C3 Zero.jpg
